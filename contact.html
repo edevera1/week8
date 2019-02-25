@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/browsericon.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito">
+    <title> Peter Baker </title>
+  </head>
+  <body>
+    <header>
+      <a class="skip-main" href="#main">Skip to main content</a>
+        <nav>
+            <ul>
+              <li><a href = "CV.html">CV</a></li>
+              <li><a class = "active" href = "contact.html">Contact</a></li>
+              <li><a href = "setpieces.html">Set Pieces</a></li>
+              <li><a href = "drops.html">Drops</a></li>
+              <li><a href = "textures.html">Textures</a></li>
+              <li><a href = "index.html">About</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="container"
+        <h1>Find me on:</h1><br>
+
+        <a href = "https://www.instagram.com/sirchamomile/?hl=en" aria-label = "Instagram"><i class="fab fa-instagram"></i></a>
+        <a href = "https://twitter.com/SirChamomile" aria-label = "Twitter"><i class="fab fa-twitter"></i></a>
+
+        <h2>Send me a note:</h2><br>
+
+        <!--based on code and lesson from: https://www.w3schools.com/howto/howto_css_contact_form.asp-->
+        <!--use bootstrap styling default for form--->
+        <!--use formspree.io for submissions-->
+
+          <form method="POST" action="https://formspree.io/edevera@umich.edu">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..."><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..."><br>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your email address..."><br>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+            <input type="submit" value="Click me">
+
+          </form>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; Peter Baker 2019</p>
+    </footer>
+  </body>
+</html>

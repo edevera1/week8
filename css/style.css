@@ -1,0 +1,141 @@
+/* background */
+
+body {
+  font-family: Nunito, Josefin, sans-serif;
+  background-image: url('../images/back.jpg');
+
+
+}
+
+img{
+  border: 5px;
+  margin: 25px;
+}
+
+div{
+  align: 0 auto;
+  vertical-align: middle;
+}
+
+main{
+  margin: 25px;
+  border: 5px;
+}
+
+
+.container{
+  display: inline-block;
+  width: 40%;
+  border: 25px;
+  padding: 25px;
+  margin: 25px;
+  align-items: stretch;
+
+}
+
+.container2{
+  display: inline-block;
+  width: 40%;
+  padding: 25px;
+  border: 25px;
+  margin: 25px;
+
+}
+
+.container3{
+  display: block;
+  border: 25px;
+  padding: 25px;
+  margin: 25px;
+}
+
+.gallery img{
+  width: 30%;
+}
+
+.gallery a{
+  width: 45%;
+}
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+}
+
+footer{
+  text-align: center;
+}
+
+/*navigation bar, sourced from w3schools.com/css/css_navbar.asp with modifications*/
+
+
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+li {
+  float: right;
+  display: block;
+  padding: 10px;
+  background-color: white;
+}
+
+
+nav a:hover {
+  background-color: #e6e6e6;
+}
+
+nav a {
+  font-family: Nunito, Josefin, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.active {
+  font-style: italic;
+}
+
+/* skip to main content, modified and sourced from https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/*/
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: black;
+    background-color: white;
+    left: 0;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    text-align:left;
+    font-size:1.2em;
+    z-index:999;
+}
+
+
+/*responsive*/
+@media screen and (max-width:700px){
+  
+  .gallery{
+    flex-direction: column;
+  }
+}
