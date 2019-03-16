@@ -6,6 +6,60 @@ footer{
   text-align: center;
 }
 
+#parent{
+  width: 100%;
+  overflow: auto;
+}
+
+.headshot {
+  float:right;
+}
+
+li{
+	text-decoration: none;
+	display:inline;
+	background-color: #adabab;
+}
+
+a{
+  font-family: Nunito, Josefin, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+nav li {
+  text-transform: uppercase;
+  text-decoration: none;
+  alignment: center;
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  width: 100%
+}
+
+.active {
+  font-style:italic;
+}
+
 /* skip to main content, modified and sourced from https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/*/
 
 a.skip-main {
@@ -33,41 +87,25 @@ a.skip-main:focus, a.skip-main:active {
     z-index:999;
 }
 
-/* Responsive Designs */
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   body {
     font-family: Nunito, Josefin, sans-serif;
     background-image: url('../images/back.jpg');
   }
 
-  ul {
+  nav{
     width: 100%;
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
     background-color: white;
   }
 
-   li {
-    float: right;
-    display: block;
-    padding: 10px;
+  li {
     background-color: white;
   }
 
-  nav a {
-    font-family: Nunito, Josefin, sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #1a1a1a;
-  }
+  nav ul li {
+    width: 16.66%;
 
-  .active {
-    font-style: italic;
   }
-
   img{
     border: 5px;
     margin: 25px;
@@ -82,25 +120,6 @@ a.skip-main:focus, a.skip-main:active {
     margin: 25px;
     border: 5px;
   }
-
-  .container{
-    display: inline-block;
-    width: 35%;
-    border: 25px;
-    padding: 25px;
-    margin: 25px;
-
-  }
-
-  .container2{
-    display: inline-block;
-    width: 40%;
-    padding: 25px;
-    border: 25px;
-    margin: 25px;
-
-  }
-
   .container3 {
     display: inline-block;
     border: 25px;
@@ -115,43 +134,44 @@ a.skip-main:focus, a.skip-main:active {
   .gallery {
       display: flex;
       flex-direction: row;
-    	flex-wrap: wrap;
-    	justify-content: center;
-    	align-items: baseline;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
   }
 
 }
 
-@media only screen and (max-width: 600px) {
-  /*fixing images*/
-  img{
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+@media screen and (min-width: 768px) and (max-width: 1280px){
+  /*tablets*/
+  nav{
     width: 100%;
-    background-color: grey;
+    background-color: white;
   }
 
-  li a {
-    display: block;
-    padding: 8px 16px;
-    text-shadow: none;
+  li {
+    background-color: white;
   }
 
-  nav a {
-    font-family: Nunito, Josefin, sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #1a1a1a;
+  nav ul li {
+    width: 16.66%;
+
   }
 
-  .active {
-    font-style: italic;
+  .gallery img{
+    width: 100%;
   }
+}
+
+@media screen and (max-width: 800px) {
+  img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headshot{
+    border-radius: 50%;
+    border: 15px;
+  }
+
 }
